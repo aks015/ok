@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style:preserve-3d;
+    z-index: -1;
+   
+} 
+.mon{
+    transform: translateZ(-40px);
+    scale: 5;
+    height: 100%;
+}
+.bg{
+    transform:translateZ(-20px);
+    scale:5;
+    height: 60%;
+}
+
+.bg,.mon{
+    position: absolute;
+    /* height: 100%; */
+    width: 100%;
+    z-index:-1;
+    object-fit: cover;
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 5px 5px 10px  black;
+}
+section{
+    background-color: rgb(45, 45,45);
+    color: white;
+    padding: 5rem 0;
+}
+.bg1{
+    background-image: url(River\ ganga.jpg);
+    
+}
+.bg2{
+    background-image: url(Rafting.jpg);
+}
+
+.bg3{
+    background-image: url(Rishikesh.jpg);
+}
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size:1.5rem ;
+    padding: 0 5rem;
+    margin: 5rem 0;
+}
+.bgr{
+    position:relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+     height:600px;
+}
+.di{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10px;
+    top: 50%;
+    left: 46%;
+    font-size:  2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600px;
+    text-shadow: 2px 3px 4px;
+}
+
